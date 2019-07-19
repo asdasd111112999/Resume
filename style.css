@@ -1,11 +1,8 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+
 body{
     background-color: black;
     color:white;
-    margin: 20px 20px;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -19,7 +16,8 @@ a{
 -----------------------------------
 #title{
     font-family: "Arial Black";
-    font-size: 24px;
+    font-size: 40px;
+    margin-left: 20px;
 }
 #logo{
     padding-top: 1px;
@@ -39,6 +37,7 @@ nav{
     font-size: 13px;
     padding-top: 8px;
     padding-bottom: 8px;
+    line-height: 30px;
 }
 nav>ul{
     list-style: none;
