@@ -5,6 +5,7 @@
 body{
     background-color: black;
     color:white;
+    margin: 20px 20px;
 }
 a{
     text-decoration: none;
@@ -15,11 +16,16 @@ a{
     clear: both;
     content: "";
 }
+-----------------------------------
+#title{
+    font-family: "Arial Black";
+    font-size: 24px;
+}
 #logo{
-    font-family: "Hiragino Kaku Gothic Std";
-    font-size: 22px;
     padding-top: 1px;
     display: inline;
+    font-family: "Arial Black";
+    font-size: 24px;
 }
 #logo>.rs{
     color: #e6686a;
