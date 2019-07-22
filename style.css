@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
     background-color: black;
     color:white;
@@ -14,9 +17,14 @@ a{
     content: "";
 }
 #title{
+    width:100%;
     font-family: "Arial Black";
     font-size: 40px;
     margin-left: 20px;
+    position: fixed;
+    top:0;
+    left:0;
+    margin-right: 20px;
 }
 #logo{
     padding-top: 1px;
@@ -34,8 +42,7 @@ a{
 nav{
     float:right;
     font-size: 13px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 30px 8px 0px;
     line-height: 30px;
 }
 nav>ul{
@@ -52,4 +59,113 @@ nav>ul>li a{
 nav>ul>li a:hover{
     border-bottom-color: #dc6465;
 }
-
+#bg{
+    height:500px;
+    background:url(./img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+#black{
+    height:500px;
+    background:rgba(0,0,0,0.8);
+    background-size: cover;
+}
+main{
+    box-sizing: border-box;
+    background: white;
+    color:black;
+    max-width: 940px;
+    min-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+#photo{
+    width: 299px;
+    height: 347px;
+    float: left;
+}
+#data{
+    float: left;
+    margin-left: 65px;
+    width: 470px;
+}
+#data .welcome{
+    display: inline-block;
+    line-height: 18px;
+    text-align: center;
+    background: #E6686A;
+    color: white;
+    font-size: 14px;
+    width: 50px;
+    height: 20px;
+    border-radius:3px;
+    padding: 4px;
+    margin-bottom: 10px;
+    position: relative;
+}   
+#data .welcome>span{
+    display: block;
+    border: 10px solid transparent;
+    border-left-color: #E6686A;
+    border-top-width: 0px;
+    width: 0px;
+    position: absolute;
+    left: 4px;
+    top: 100%;
+}
+#data>h2{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    font-size:30px; 
+}
+#data>p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#data>hr{
+    height: 0px;
+    border: none;
+    border-top: 1px solid #DEDEDE;
+}
+#data>dl{
+    padding-top: 20px;
+}
+#data>dl>dt,dd{
+    float: left;
+    padding: 10px 0px;
+}
+#data>dl>dt{
+    width: 30%;
+    font-weight: bold;
+}
+#data>dl>dd{
+    width: 70%;
+    color: #9da0a7;
+}
+footer.media{
+    background: #E6686A;
+    height: 50px;
+    max-width: 940px;
+    min-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 0px;
+}
+footer.media a{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+body footer.media a:hover{
+    border: 1px solid black;
+    background: black;
+}
+footer.media img{
+    height: 50px;
+    width: 50px;
+}
