@@ -251,12 +251,12 @@ section>nav>ol>li{
     cursor: pointer;
 }
 .worksBar{
-    width: 300px;
+    width: 346px;
     height: 5px;
     background: white;
     margin-bottom: 28px;
     border-radius: 2px;
-    margin: 5px 447px 0px auto;
+    margin: 5px 447px 0px 1102px;
 }
 .worksBar>div{
     height: 100%;
@@ -265,16 +265,16 @@ section>nav>ol>li{
     transition: all 0.3s;
 }
 .worksBar>.bar-1{
-    margin-left: 0;
+    margin-left: 30px;
     width: 50px;
   }
   .worksBar>.bar-2{
-    margin-left: 100px;
+    margin-left: 126px;
     width: 70px;
   }
   .worksBar>.bar-3{
-    margin-left: 180px;
-    width: 119px;
+    margin-left: 206px;
+    width: 128px;
   }
 div.works{
     box-sizing: border-box;
