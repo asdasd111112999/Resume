@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div id="title" class="cleckfix" style="font-size: 39px; margin-left:20xp;">
+    <div id="loading" class="active">
+        <div class="loading""></div>
+    </div>
+    <div id="title" class="clearfix" style="font-size: 39px; margin-left:20xp;">
         <div id="logo"> 
             <span class="rs">RS</span>
             <span class="cord">cord</span>
@@ -25,8 +28,8 @@
     <div id="bg">
         <div id="black"></div>
     </div>
-    <main class="cleckfix">
-        <div id="photo" class="cleckfix">
+    <main class="clearfix">
+        <div id="photo" class="clearfix">
             <img src="./img/avatar.jpg" alt="我的照片">
         </div>
         <div id="data">   
@@ -50,10 +53,10 @@
         </div>
     </main>
     <footer class="media">
-        <a href="https://github.com/asdasd111112999">
+        <a href="https://github.com/asdasd111112999" target="_blank">
             <img src="./img/github.png" alt="github">
         </a>
-        <a href="https://blog.csdn.net/zz_LXW">
+        <a href="https://blog.csdn.net/zz_LXW" target="_blank">
             <img src="./img/csdn.png" alt="csdn">
         </a>
     </footer>
@@ -63,7 +66,7 @@
     <p>技能</p>
     <section class="skills">
             <div>
-                <ol class="cleckfix">
+                <ol class="clearfix">
                     <li>
                         <h3>HTML 5& CSS 3</h3>
                         <div id="progressBar">
@@ -138,5 +141,10 @@
         </div>
         </div>
     </section>
+    <script>
+    setTimeout(
+        function(){loading.classList.remove('active')},
+        1500)
+    </script>
 </body>
 </html>
