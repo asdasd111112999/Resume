@@ -16,19 +16,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">关于</a></li>
-                <li><a href="">技能</a></li>
-                <li><a href="">作品</a></li>
-                <li><a href="">博客</a></li>
-                <li><a href="">联系我</a></li>
-                <li><a href="">其他</a></li>
+                <li><a href="#siteAbout">关于</a></li>
+                <li><a href="#siteSkills">作品</a></li>
+                <li><a href="#siteWorks">技能</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">联系我</a></li>
+                <li><a href="#">其他</a></li>
             </ul>
         </nav>
     </div>
     <div id="bg">
         <div id="black"></div>
     </div>
-    <main class="clearfix">
+    <main data-x  id="siteAbout" class="clearfix">
         <div id="photo" class="clearfix">
             <img src="./img/avatar.jpg" alt="我的照片">
         </div>
@@ -52,7 +52,7 @@
             </dl>
         </div>
     </main>
-    <footer class="media">
+    <footer data-x id="siteSkills"class="media">
         <a href="https://github.com/asdasd111112999" target="_blank">
             <img src="./img/github.png" alt="github">
         </a>
@@ -64,7 +64,7 @@
             <a href="./resume.pdf">下载PDF简历</a>
     </div>
     <p>技能</p>
-    <section class="skills">
+    <section data-x id="siteWorks"class="skills">
             <div>
                 <ol class="clearfix">
                     <li>
@@ -141,16 +141,8 @@
         </div>
         </div>
     </section>
-    <script>
-        setTimeout(function(){loading.classList.remove('active')},1500)
-        window.onscroll=function(){
-            if(window.scrollY>10){
-                return title.classList.add("detach");
-              }else{
-                return title.classList.remove("detach");
-              }
-        }
-
+    <a  id="Topping" href="#"></a>
+    <script src="./main.js">
     </script>
 </body>
 </html>
