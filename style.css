@@ -11,6 +11,13 @@ a{
     text-decoration: none;
     color:#9A9da2;
 }
+[data-x].offset{
+    transform: translateY(100px);
+  }
+  [data-x]{
+    transform: translateY(0);
+    transition: all 0.5s;
+  }
 /*---------------载入loading界面---------------*/
 #loading{
     display: none;
@@ -169,7 +176,7 @@ a{
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
-    ]}
+    }
 main{
     box-sizing: border-box;
     background: white;
@@ -301,6 +308,9 @@ body>p{
     font-size: 40px;
     margin: 30px 0px;
     
+}
+section.skills.offset progressBar{
+    transform: translateX(-100%);
 }
 section.skills>div>ol{
     box-sizing: border-box;
