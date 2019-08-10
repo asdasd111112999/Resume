@@ -16,9 +16,16 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#siteAbout">关于</a></li>
-                <li><a href="#siteSkills">作品</a></li>
-                <li><a href="#siteWorks">技能</a></li>
+                <li><a href="#floor_one">关于</a></li>
+                <li><a href="#floor_two">技能</a></li>
+                <li>
+                    <a href="#floor_three">作品</a>
+                    <ul>
+                        <li>作品1</li>
+                        <li>作品2</li>
+                        <li>作品3</li>
+                    </ul>
+                </li>
                 <li><a href="#">博客</a></li>
                 <li><a href="#">联系我</a></li>
                 <li><a href="#">其他</a></li>
@@ -28,43 +35,46 @@
     <div id="bg">
         <div id="black"></div>
     </div>
-    <main data-x  id="siteAbout" class="clearfix">
-        <div id="photo" class="clearfix">
-            <img src="./img/avatar.jpg" alt="我的照片">
-        </div>
-        <div id="data">   
-            <span class="welcome">
-                Hello
-                <span></span>
-            </span>
-            <h2>刘文俊</h2>
-            <p>前端开发工程师</p>
-            <hr>
-            <dl>
-                <dt>年龄</dt>
-                <dd>23</dd>
-                <dt>所在地</dt>
-                <dd>江西</dd>
-                <dt>邮箱</dt>
-                <dd>570671435@qq.com</dd>
-                <dt>手机</dt>
-                <dd>18370858025</dd>
-            </dl>
-        </div>
-    </main>
-    <footer data-x id="siteSkills"class="media">
-        <a href="https://github.com/asdasd111112999" target="_blank">
-            <img src="./img/github.png" alt="github">
-        </a>
-        <a href="https://blog.csdn.net/zz_LXW" target="_blank">
-            <img src="./img/csdn.png" alt="csdn">
-        </a>
-    </footer>
+    <div data-x id="floor_one">
+        <main id="siteAbout" class="clearfix">
+            <div id="photo" class="clearfix">
+                <img src="./img/avatar.jpg" alt="我的照片">
+            </div>
+            <div id="data">   
+                <span class="welcome">
+                    Hello
+                    <span></span>
+                </span>
+                <h2>刘文俊</h2>
+                <p>前端开发工程师</p>
+                <hr>
+                <dl>
+                    <dt>年龄</dt>
+                    <dd>23</dd>
+                    <dt>所在地</dt>
+                    <dd>江西</dd>
+                    <dt>邮箱</dt>
+                    <dd>570671435@qq.com</dd>
+                    <dt>手机</dt>
+                    <dd>18370858025</dd>
+                </dl>
+            </div>
+        </main>
+        <footer id="siteSkills"class="media">
+            <a href="https://github.com/asdasd111112999" target="_blank">
+                <img src="./img/github.png" alt="github">
+            </a>
+            <a href="https://blog.csdn.net/zz_LXW" target="_blank">
+                <img src="./img/csdn.png" alt="csdn">
+            </a>
+        </footer>
+    </div>
     <div id="download">
             <a href="./resume.pdf">下载PDF简历</a>
     </div>
     <p>技能</p>
-    <section data-x id="siteWorks"class="skills">
+    <div data-x id="floor_two">
+        <section id="siteWorks"class="skills">
             <div>
                 <ol class="clearfix">
                     <li>
@@ -105,43 +115,45 @@
                     </li>
                 </ol>
             </div>
-    </section>
+        </section>
+    </div>
     <p>作品集</p>
-    <section >
-        <nav>        
-            <ol>
-                <li id="portfolio1">所有</li>
-                <li id="portfolio2">框架</li>
-                <li id="portfolio3">原生JS&CSS</li>
-            </ol>
-            <div class="worksBar">
-                <div id="portfolioBar" class="bar-1"></div>
+    <div data-x id="floor_three">
+        <section>
+            <nav>        
+                <ol>
+                    <li id="portfolio1">所有</li>
+                    <li id="portfolio2">框架</li>
+                    <li id="portfolio3">原生JS&CSS</li>
+                </ol>
+                <div class="worksBar">
+                    <div id="portfolioBar" class="bar-1"></div>
+                </div>
+            </nav>
+            <script>
+                portfolio1.onclick= function(){
+                    portfolioBar.className = 'bar-1'
+                }
+                portfolio2.onclick= function(){
+                    portfolioBar.className = 'bar-2'
+                }
+                portfolio3.onclick= function(){
+                    portfolioBar.className = 'bar-3'
+                }
+            </script>
+            <div class="works">
+                <div class="big">
+                    <img src="./img/works_1.jpg" alt="作品一">
+                </div>
+                <div class="small">
+                    <img src="./img/works_2.jpg" alt="作品二">
+                    <img src="./img/works_3.jpg" alt="作品三">
+                </div>
             </div>
-        </nav>
-
-        <script>
-            portfolio1.onclick= function(){
-                portfolioBar.className = 'bar-1'
-            }
-            portfolio2.onclick= function(){
-                portfolioBar.className = 'bar-2'
-            }
-            portfolio3.onclick= function(){
-                portfolioBar.className = 'bar-3'
-            }
-        </script>
-        <div class="works">
-            <div class="big">
-                <img src="./img/works_1.jpg" alt="作品一">
-            </div>
-            <div class="small">
-                <img src="./img/works_2.jpg" alt="作品二">
-                <img src="./img/works_3.jpg" alt="作品三">
-            </div>
-        </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <a  id="Topping" href="#"></a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.1.1/Tween.min.js"></script>
     <script src="./main.js">
     </script>
 </body>
