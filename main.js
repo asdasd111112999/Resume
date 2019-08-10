@@ -9,7 +9,6 @@ window.onscroll=function(){
       }else{
         return title.classList.remove("detach");
       }
-    find()
 }
 //添加title滚动选择条
 var all_data_x=document.querySelectorAll('[data-x]');
@@ -29,7 +28,6 @@ function find(){
   let id = all_data_x[floor].id
   let a = document.querySelector('a[href="#'+ id + '"]')
   let li = a.parentNode
-  console.log(a);
   let brothersAndMe = li.parentNode.children
   for(let i=0; i<brothersAndMe.length; i++){
     brothersAndMe[i].classList.remove('highlight')
